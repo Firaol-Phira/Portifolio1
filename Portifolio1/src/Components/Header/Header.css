@@ -1,0 +1,66 @@
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.custom-navbar {
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.custom-navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+/* Navigation links */
+.nav-link {
+  color: white !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Hamburger */
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Mobile opened menu */
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  right: -11px;
+
+  width: 125px;
+
+  background-color: #131d752e;
+
+  border: 1px solid rgba(59, 71, 228, 0.245);
+  border-radius: 16px;
+
+  padding: 10px 15px;
+
+  box-shadow: 0 10px 30px rgba(60, 57, 227, 0.264);
+}
+
+.mobile-menu .nav-link {
+  padding: 7px 0;
+  text-align: left;
+}
+.header{
+  width: 90%;
+}
