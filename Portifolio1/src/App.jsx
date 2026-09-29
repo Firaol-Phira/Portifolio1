@@ -8,6 +8,7 @@ import Home from './Components/Home/home';
 import About from './Components/About/About';
 import Expertise from './Components/Expertice/Expertise';
 import BackgroundEffect from './Components/BG/BacgroundEffect';
+import SelectedProjects from './Components/SelectedProjects/SelectedProjects';
 
 
 
@@ -21,6 +22,7 @@ function App() {
    <Home/>
    <Expertise/>
    <About/>
+   <SelectedProjects/>
     </>
   )
 }

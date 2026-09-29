@@ -1,0 +1,247 @@
+/* SelectedProjects.css */
+
+:root {
+  --bg-dark-gradient: radial-gradient(circle at center, #0a1128 0%, #030712 100%);
+  --card-bg: rgba(11, 22, 44, 0.4);
+  --card-border: rgba(59, 130, 246, 0.15);
+  --card-border-hover: rgba(59, 130, 246, 0.4);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  
+  --accent-blue: #3b82f6;
+  --accent-glow: rgba(59, 130, 246, 0.25);
+  --tag-bg: rgba(59, 130, 246, 0.08);
+  --tag-border: rgba(59, 130, 246, 0.25);
+  --link-bg: #131d752e;
+  --link-border: rgba(59, 71, 228, 0.245);
+  --link-shadow:rgba(60, 57, 227, 0.264);
+}
+
+.projects-section {
+  margin-top: 20px;
+  width: 90%;
+  background: var(--bg-dark-gradient);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-primary);
+}
+
+.project-max-width {
+  max-width: 1200px;
+}
+
+.projects-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.025em;
+}
+
+.highlight-text {
+  color: var(--accent-blue);
+  position: relative;
+  text-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* Individual Project Card UI */
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--card-border-hover);
+  box-shadow: 0 10px 30px -10px var(--accent-glow);
+}
+
+/* Browser Frame Device Mockup */
+.browser-frame {
+  background: rgba(3, 7, 18, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.browser-dots {
+  display: flex;
+  gap: 6px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-red { background-color: #ef4444; }
+.dot-yellow { background-color: #eab308; }
+.dot-green { background-color: #22c55e; }
+
+.image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.04);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 14px 0;
+  letter-spacing: -0.01em;
+}
+
+/* Technology Tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-pill {
+  background: var(--tag-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--tag-border);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  font-size: 0.925rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  width: max-content;
+  transition: color 0.2s ease;
+  
+  
+  background-color:var(--link-bg);
+
+  border: 1px solid var(--link-border);
+  border-radius: 16px;
+
+  padding: 10px 15px;
+
+  box-shadow: 0 5px 30px var(--link-shadow)
+}
+
+.link-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover {
+  color: var(--text-primary);
+}
+
+.project-link:hover .link-icon {
+  transform: scale(1.1);
+  color: var(--accent-blue);
+}
+
+  
+
+/* 0 Bright mode */
+
+   /* 2. BRIGHT LIGHT MODE OVERRIDES (.light-mode CONFLICT SHIELD)
+   ==========================================================================  */
+
+/* Main Section Heading Color Switch */
+.light-mode .projects-heading {
+  color: #111827 !important; /* Dark charcoal ink */
+}
+
+.light-mode .highlight-text {
+  color: #1d4ed8 !important; /* Deep sapphire blue accent */
+}
+
+/* Bright Card Surfaces Layout */
+.light-mode .project-card {
+  background-color: #ffffff !important; /* Pure white canvas cards */
+  border: 1px solid rgba(0, 0, 0, 0.08) !important; /* Fine dark crisp border outline */
+  box-shadow: 0 10px 30px -10px rgba(17, 24, 39, 0.05) !important; /* Ultra-soft clean drop shadow */
+}
+
+.light-mode .project-card:hover {
+  border-color: rgba(29, 78, 216, 0.3) !important;
+  box-shadow: 0 12px 40px -10px rgba(29, 78, 216, 0.1) !important;
+}
+
+/* Browser Frame Top Tab Balancing */
+.light-mode .browser-frame {
+  background-color: #f1f5f9 !important; /* Soft gray browser header background */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Project Text Modifications */
+.light-mode .project-title {
+  color: #111827 !important; /* Sharp readable black titles */
+}
+
+.light-mode .project-description {
+  color: #374151 !important; /* High contrast body charcoal slate */
+}
+
+/* Tech Badges Polishing (React, MySQL, Node.js) */
+.light-mode .tag-pill {
+  background-color: rgba(29, 78, 216, 0.06) !important; /* Gentle light blue surface backing */
+  color: #1d4ed8 !important;                            /* Solid blue text contrast */
+  border: 1px solid rgba(29, 78, 216, 0.15) !important;
+}
+
+/* Action Button Layout Clean-up */
+.light-mode .project-link {
+  background-color: #ffffff !important;
+  color: #1d4ed8 !important;
+  border: 1px solid rgba(29, 78, 216, 0.2) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.light-mode .project-link:hover {
+  background-color: #1d4ed8 !important; /* Filled background shift button interface */
+  border-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(29, 78, 216, 0.25) !important;
+}
+.light-mode .projects-section {
+  background: transparent !important; /* Lets your new global light-mode body gradient flow through cleanly */
+}

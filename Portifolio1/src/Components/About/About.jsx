@@ -3,7 +3,7 @@ import "./About.css";
 function About() {
   return (
     <>
-      <div className="about container">
+      <div id="about" className="about container">
         <div className="row justify-content-center">
           <div className="aboutTiltle">
             <h1>About Me</h1>

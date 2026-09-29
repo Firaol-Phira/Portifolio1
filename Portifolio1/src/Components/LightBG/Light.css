@@ -1,0 +1,31 @@
+.theme-toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #ffffff; /* Matches your header text color */
+  transition: background-color 0.2s ease, color 0.2s ease;
+  margin-left: 15px; /* Pushes it slightly away from 'Contact' link */
+}
+
+.theme-toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.toggle-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Color adjustment for the button when light mode is active */
+.light-mode .theme-toggle-btn {
+  color: #1a202c;
+}
+
+.light-mode .theme-toggle-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}

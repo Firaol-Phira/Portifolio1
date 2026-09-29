@@ -136,3 +136,8 @@ body,
 body {
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+  /* Adjust this value to equal your navbar's height + your desired shadow gap */
+  scroll-padding-top: 100px; 
+}

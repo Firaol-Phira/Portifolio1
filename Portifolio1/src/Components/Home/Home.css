@@ -60,3 +60,58 @@
   font-weight: 700;
   line-height: 1.1;
 }
+
+/* 0 BRIGHT MODE==========================================================================
+   3. HERO AREA STRUCTURAL LAYOUT
+   ========================================================================== */
+
+/*/* Profile Image Border Accent */
+
+.light-mode .hometop {
+  border: 3px solid var(--accent-blue);
+  box-shadow: var(--shadow-main);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* "Available for Freelance" Status Badge */
+.light-mode .available-badge  {
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease; 
+}
+
+/* Typography Assignments */
+ .light-mode .homebottum h1 {
+  color: var(--text-primary);
+}
+
+ .light-mode .homebottum h2{
+  color: var(--accent-blue);
+}
+
+.light-mode .homebottum p{
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+/* Force your main landing titles to adapt to the light theme */
+.light-mode .homebottum, 
+.light-mode h1 {
+  color: #111827 !important; /* High-contrast ink charcoal */
+}
+
+/* Force your professional subtitle ("Full-Stack Developer") */
+.light-mode .homebottum,
+.light-mode h2{
+  color: #1d4ed8 !important; /* Rich sapphire blue */
+}
+
+/* Force your long introduction paragraph text to become readable */
+.light-mode .homebottum,
+.light-mode p{
+  color: #4b5563 !important; /* Balanced slate gray for clean reading */
+}
+
+
+
+

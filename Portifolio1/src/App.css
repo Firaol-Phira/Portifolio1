@@ -1,3 +1,62 @@
 body{
     background-color: #05071F;
 }
+
+/* 0 Bright Mode==========================================================================
+   1. GLOBAL SYSTEM VARIABLE ARCHITECTURE (COMBINED)
+   ========================================================================== */
+:root {
+  /* --- Default Dark Mode Configuration --- */
+  --bg-main: radial-gradient(circle at top, #05071F 0%, #05071F 100%);
+  --bg-container: #111e36;             /* Card surfaces and section boxes */
+  --bg-container-hover: #172a4a;       
+  
+  --text-primary: #ffffff;             /* Main titles and navigation links */
+  --text-secondary: #9ca3af;           /* Paragraph details and subtitles */
+  --border-color: rgba(255, 255, 255, 0.08);
+  
+  /* Layout Accent Details */
+  --accent-blue: #3b82f6;
+  --badge-bg: rgba(59, 130, 246, 0.1);
+  --badge-text: #60a5fa;
+  --logo-filter: brightness(1);        
+  --shadow-main: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.light-mode {
+  /* --- Full Bright Mode Overrides --- */
+  --bg-main: radial-gradient(circle at top, #f3f6fa 0%, #f9fafb 100%);
+  --bg-container: #ffffff;             /* Clean crisp white background surfaces */
+  --bg-container-hover: #f1f5f9;       
+  
+  --text-primary: #111827;             /* Ink black / Dark charcoal text */
+  --text-secondary: #4b5563;           /* Balanced readable slate text */
+  --border-color: rgba(0, 0, 0, 0.06);
+  
+  /* Asset Transformations */
+  --accent-blue: #1d4ed8;              /* Slightly deep structural blue */
+  --badge-bg: rgba(29, 78, 216, 0.08);
+  --badge-text: #1d4ed8;
+  --logo-filter: brightness(0.1);    
+    /*Instantly turns a white logo dark */
+  --shadow-main: 0 10px 30px -10px rgba(17, 24, 39, 0.06);
+}
+
+/* ==========================================================================
+   2. GLOBAL ELEMENT BASELINE BASICS
+   ========================================================================== */
+body {
+  background: var(--bg-main) !important;
+  color: var(--text-primary);
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+p, span, li, a {
+  transition: color 0.3s ease;
+}

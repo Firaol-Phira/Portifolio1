@@ -4,7 +4,7 @@ import profile from "../../assets/profile.jpg";
 function Home() {
   return (
     <>
-      <div className="home container">
+      <div id="home"  className="home container">
         <div className="row justify-content-center">
           <div className="col-12 d-flex justify-content-center">
             <div className="hometop">

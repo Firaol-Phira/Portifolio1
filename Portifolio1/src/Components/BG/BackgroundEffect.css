@@ -11,10 +11,10 @@
 /* Both lights */
 .moving-light {
   position: absolute;
-  top: -25px;
+  top: -90px;
 
   width: 550px;
-  height: 180px;
+  height: 280px;
 
   border-radius: 50%;
   filter: blur(25px);
@@ -29,7 +29,7 @@
 
   background: radial-gradient(
     ellipse at left center,
-    rgba(0, 200, 255, 0.65) 0%,
+    rgba(0, 200, 255, 0.65)0%,
     rgba(0, 170, 255, 0.30) 25%,
     rgba(0, 120, 255, 0.10) 50%,
     transparent 75%
