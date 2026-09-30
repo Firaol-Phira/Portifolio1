@@ -23,9 +23,6 @@
   border-radius: 50%;
   box-shadow: 0 0 0 5px rgba(41, 182, 246, 0.15);
 }
-/* .hometop img{
-    height: 75vh;
-} */
 
 .hometop {
     margin-bottom: 25px;
@@ -94,22 +91,22 @@
   color: var(--text-secondary);
   line-height: 1.6;
 }
-/* Force your main landing titles to adapt to the light theme */
+
 .light-mode .homebottum, 
 .light-mode h1 {
-  color: #111827 !important; /* High-contrast ink charcoal */
+  color: #111827 !important; 
 }
 
-/* Force your professional subtitle ("Full-Stack Developer") */
+
 .light-mode .homebottum,
 .light-mode h2{
-  color: #1d4ed8 !important; /* Rich sapphire blue */
+  color: #0d6efd !important; 
 }
 
-/* Force your long introduction paragraph text to become readable */
+
 .light-mode .homebottum,
 .light-mode p{
-  color: #4b5563 !important; /* Balanced slate gray for clean reading */
+  color: #4b5563 !important; 
 }
 
 

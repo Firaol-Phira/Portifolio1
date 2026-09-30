@@ -1,7 +1,7 @@
 /* SelectedProjects.css */
 
 :root {
-  --bg-dark-gradient: radial-gradient(circle at center, #0a1128 0%, #030712 100%);
+  --bg-dark-gradient: radial-gradient(circle at center, #05071F 0%, #05071F 100%);
   --card-bg: rgba(11, 22, 44, 0.4);
   --card-border: rgba(59, 130, 246, 0.15);
   --card-border-hover: rgba(59, 130, 246, 0.4);
@@ -9,7 +9,7 @@
   --text-primary: #ffffff;
   --text-secondary: #94a3b8;
   
-  --accent-blue: #3b82f6;
+  --accent-blue: #0d6efd;
   --accent-glow: rgba(59, 130, 246, 0.25);
   --tag-bg: rgba(59, 130, 246, 0.08);
   --tag-border: rgba(59, 130, 246, 0.25);
@@ -187,18 +187,18 @@
 
 /* Main Section Heading Color Switch */
 .light-mode .projects-heading {
-  color: #111827 !important; /* Dark charcoal ink */
+  color: #111827 !important;
 }
 
 .light-mode .highlight-text {
-  color: #1d4ed8 !important; /* Deep sapphire blue accent */
+  color: #0d6efd !important; 
 }
 
-/* Bright Card Surfaces Layout */
+
 .light-mode .project-card {
-  background-color: #ffffff !important; /* Pure white canvas cards */
-  border: 1px solid rgba(0, 0, 0, 0.08) !important; /* Fine dark crisp border outline */
-  box-shadow: 0 10px 30px -10px rgba(17, 24, 39, 0.05) !important; /* Ultra-soft clean drop shadow */
+  background-color: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 10px 30px -10px rgba(17, 24, 39, 0.05) !important; 
 }
 
 .light-mode .project-card:hover {
@@ -208,40 +208,39 @@
 
 /* Browser Frame Top Tab Balancing */
 .light-mode .browser-frame {
-  background-color: #f1f5f9 !important; /* Soft gray browser header background */
+  background-color: #f1f5f9 !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
 }
 
 /* Project Text Modifications */
 .light-mode .project-title {
-  color: #111827 !important; /* Sharp readable black titles */
+  color: #111827 !important; 
 }
 
 .light-mode .project-description {
-  color: #374151 !important; /* High contrast body charcoal slate */
+  color: #374151 !important; 
 }
 
-/* Tech Badges Polishing (React, MySQL, Node.js) */
 .light-mode .tag-pill {
-  background-color: rgba(29, 78, 216, 0.06) !important; /* Gentle light blue surface backing */
-  color: #1d4ed8 !important;                            /* Solid blue text contrast */
+  background-color: rgba(29, 78, 216, 0.06) !important; 
+  color: #0d6efd !important;                            
   border: 1px solid rgba(29, 78, 216, 0.15) !important;
 }
 
 /* Action Button Layout Clean-up */
 .light-mode .project-link {
   background-color: #ffffff !important;
-  color: #1d4ed8 !important;
+  color: #0d6efd !important;
   border: 1px solid rgba(29, 78, 216, 0.2) !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 .light-mode .project-link:hover {
-  background-color: #1d4ed8 !important; /* Filled background shift button interface */
-  border-color: #1d4ed8 !important;
+  background-color: #0d6efd !important; 
+  border-color: #0d6efd !important;
   color: #ffffff !important;
   box-shadow: 0 4px 12px rgba(29, 78, 216, 0.25) !important;
 }
 .light-mode .projects-section {
-  background: transparent !important; /* Lets your new global light-mode body gradient flow through cleanly */
+  background: transparent !important; 
 }

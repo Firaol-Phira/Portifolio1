@@ -12,7 +12,7 @@ const projectsData = [
     tags: ["React", "Async JS", "Bootstrap 5"],
     description:
       "A frontend rebuild that captures the exact look and feel of the Netflix home interface. Uses asynchronous API calls to fetch and display trending showcase movies in real-time.",
-    link: "#",
+    link: "https://firaol-phira.github.io/NetflixProject2/",
   },
   {
     id: 2,
@@ -38,18 +38,12 @@ export default function SelectedProjects() {
   return (
     <section id="projects" className="container projects-section py-5">
       <div className="container project-max-width">
-        <h2 className="projects-heading mb-5">
+        <h1 className="projects-heading mb-5">
           Selected <span className="highlight-text">Projects</span>
-        </h2>
-
-        {/* Bootstrap Row handling layout shifts natively */}
+        </h1>
         <div className="row g-4">
           {projectsData.map((project) => (
-            /* 
-              col-12: Full width stack on mobile screens
-              col-md-6: Two columns on medium tablets
-              col-lg-4: Three columns on desktop laptops
-            */
+          
             <div key={project.id} className="col-12 col-md-6 col-lg-4">
               <div className="project-card h-100">
                 {/* Mockup Browser Window Frame */}

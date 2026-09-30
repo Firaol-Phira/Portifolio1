@@ -1,7 +1,8 @@
 .header {
-  min-height: 50px;
   width: 90%;
+  height: 65rem;
 }
+
 .logo {
   width: 9rem;
 }
@@ -11,37 +12,31 @@
   height: auto;
 }
 
+/* Main navbar */
 .custom-navbar {
   background-color: transparent;
   transition: all 0.3s ease-in-out;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  padding: 0 !important;
 }
 
+/* Scrolled navbar */
 .custom-navbar.scrolled {
   background-color: rgba(255, 255, 255, 0.029);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  padding-top: 0.1rem;
-  padding-bottom: 2rem;
+  padding: 0 !important;
 }
-/* 1. Remove Bootstrap's default padding on the logo anchor tag */
+
 .custom-navbar .navbar-brand {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  margin-right: 0; /* Cleans up default right spacing */
+  margin-right: 0;
   margin-left: 0;
 }
 
-/* 2. Remove Bootstrap's hidden padding on the mobile toggle button */
-.custom-navbar .navbar-toggler {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* 3. Keep your elements perfectly aligned in a tight row */
 .custom-navbar .header {
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -54,7 +49,7 @@
 }
 
 .nav-link:hover {
-  color: #0d6efd !important;
+  color: #2563eb !important;
 }
 
 /* Hamburger */
@@ -84,10 +79,11 @@
   padding: 7px 0;
   text-align: left;
 }
-.navbar-brand img {
-  /* This reads the --logo-filter token from your global file */
-  filter: var(--logo-filter); 
-  transition: filter 0.3s ease;
+
+.custom-navbar .navbar-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -100,25 +96,27 @@
 /* 1. Header Typography Links & Logo Text */
 .light-mode .custom-navbar .nav-link,
 .light-mode .custom-navbar .navbar-brand {
-  color: #111827 !important; /* Premium dark ink text color */
+  color: #111827 !important;
   transition: color 0.3s ease;
 }
-
-/* Link Hover Highlight Color in Bright Mode */
-.light-mode .custom-navbar .nav-link:hover {
-  color: #1d4ed8 !important; /* Deep sapphire blue brand accent */
+.light-mode .navbar-brand img {
+  filter: var(--logo-filter);
+  transition: filter 0.3s ease;
 }
 
-/* 2. Scrolled Header Strip Modifications */
+.light-mode .custom-navbar .nav-link:hover {
+  color: #1d4ed8 !important;
+}
+
 .light-mode .custom-navbar.scrolled {
-  background-color: rgba(243, 246, 250, 0.95) !important; /* Soft frosted bright background tint */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);           /* Clean layout bounding separator line */
+  background-color: rgba(243, 246, 250, 0.95) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   backdrop-filter: blur(10px);
 }
 
 /* 3. Auto-Inverting Logo Graphics Assets */
 .light-mode .navbar-brand.logo img {
-  filter: brightness(0.1) !important; /* Automatically transitions white/light logo files to solid charcoal dark */
+  filter: brightness(0.1) !important;
   transition: filter 0.3s ease;
 }
 
@@ -126,32 +124,31 @@
    4. Mobile Hamburger Core Icon Balancing
    ========================================================================== */
 
-/* This targets the exact Bootstrap icon setup you already have in your code */
 .light-mode .navbar-toggler .navbar-toggler-icon,
 .light-mode .tdot {
+  filter: invert(1) brightness(0) !important;
 
-  filter: invert(1) brightness(0) !important; 
-  
-  opacity: 0.85; /* Optional: Softens the black to match premium ink styles */
+  opacity: 0.85;
   transition: filter 0.3s ease;
 }
 
-/* 5. Mobile Accordion Dropdown Canvas Layout Drawer */
 .light-mode .mobile-menu {
-  background-color: #ffffff !important;           /* Crisp solid white interior fold surface card */
+    position: absolute;
+  top: 100%;
+  right: -11px;
+  padding: 10px 15px;
+  width: 125px;
+  background-color: #ffffff !important;
   border: 1px solid rgba(0, 0, 0, 0.06) !important;
-  border-radius: 12px;
-  padding: 16px 20px;
-  box-shadow: 0 10px 25px -5px rgba(17, 24, 39, 0.08) !important; /* Ambient soft spatial drop shadow profile */
-  margin-top: 10px;
+  border-radius: 16px;
+ 
+  box-shadow: 0 10px 30px  rgba(17, 24, 39, 0.167) !important;
+ 
 }
 
-/* Padding adjustments to frame your toggle neatly within your list items array stack layout */
 .light-mode .theme-toggle-mobile-item {
   display: flex;
-  padding: 8px 0;
+  padding: 7px 0;
   justify-content: flex-start;
+ 
 }
-/* .light-mode .tdot{
-  color: ;
-} */

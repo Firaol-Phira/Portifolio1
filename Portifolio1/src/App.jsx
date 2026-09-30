@@ -9,6 +9,8 @@ import About from './Components/About/About';
 import Expertise from './Components/Expertice/Expertise';
 import BackgroundEffect from './Components/BG/BacgroundEffect';
 import SelectedProjects from './Components/SelectedProjects/SelectedProjects';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -23,6 +25,8 @@ function App() {
    <Expertise/>
    <About/>
    <SelectedProjects/>
+   <Contact/>
+   <Footer/>
     </>
   )
 }

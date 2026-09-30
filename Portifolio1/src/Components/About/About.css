@@ -5,5 +5,14 @@
     width: 90%;
     color:white;}
     .aboutTiltle{
+        font-size: 2.5rem;
         margin-bottom: 25px;
+    }
+
+
+    /* 0 Bright mode */
+
+
+    .light-mode .aboutTiltle h1{
+        color: #111827 !important; ;
     }

@@ -86,3 +86,9 @@
     right: 100%;
   }
 }
+
+/* 0 Bright */
+.light-mode .background-effect {
+    display:none !important;
+
+}

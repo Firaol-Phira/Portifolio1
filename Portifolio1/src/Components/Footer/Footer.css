@@ -1,0 +1,34 @@
+.footer-copyright {
+    
+    background-color: #05071F;
+    width: 100%;
+    padding: 30px 20px;      
+    box-sizing: border-box;
+
+   
+    border-top: 2px solid #aab0c798; 
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copyright span {
+    /* Muted text color from the form theme */
+    color: #aab0c7;            /* Clear, readable gray-blue text */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;          
+    letter-spacing: 0.3px;    
+    text-align: center;
+}
+
+/* 0 Bright mode */
+.light-mode .footer-copyright{
+    background-color: var(--main-bg);
+   
+}
+.light-mode .footer-copyright span{
+     color: #111827;
+}

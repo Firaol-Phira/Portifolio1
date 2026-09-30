@@ -7,9 +7,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: #ffffff; /* Matches your header text color */
+  color: #ffffff; 
   transition: background-color 0.2s ease, color 0.2s ease;
-  margin-left: 15px; /* Pushes it slightly away from 'Contact' link */
+ 
 }
 
 .theme-toggle-btn:hover {
@@ -19,9 +19,10 @@
 .toggle-icon {
   width: 20px;
   height: 20px;
+  text-align: center;
 }
 
-/* Color adjustment for the button when light mode is active */
+
 .light-mode .theme-toggle-btn {
   color: #1a202c;
 }
