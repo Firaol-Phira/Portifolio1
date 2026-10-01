@@ -21,7 +21,7 @@
 
 /* Scrolled navbar */
 .custom-navbar.scrolled {
-  background-color: rgba(255, 255, 255, 0.029);
+  background-color: rgba(34, 40, 64, 0.658);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
