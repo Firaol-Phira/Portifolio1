@@ -1,7 +1,7 @@
 import React from "react";
 import "./SelectedProjects.css";
 import Geda from "../../assets/Geda.jpg";
-import Netflix from "../../assets/NeTfliximg.PNG";
+import Netflix from "../../assets/Netfliximg.PNG";
 import Apple from "../../assets/Apple.jpg";
 
 const projectsData = [
@@ -11,6 +11,7 @@ const projectsData = [
     image: Netflix,
     tags: ["React", "Async JS", "Bootstrap 5"],
     description:
+    
       "A frontend rebuild that captures the exact look and feel of the Netflix home interface. Uses asynchronous API calls to fetch and display trending showcase movies in real-time.",
     link: "https://firaol-phira.github.io/NetflixProject2/",
   },
@@ -43,7 +44,6 @@ export default function SelectedProjects() {
         </h1>
         <div className="row g-4">
           {projectsData.map((project) => (
-          
             <div key={project.id} className="col-12 col-md-6 col-lg-4">
               <div className="project-card h-100">
                 {/* Mockup Browser Window Frame */}
@@ -78,33 +78,33 @@ export default function SelectedProjects() {
                     {project.description}
                   </p>
 
-           <a
-  href={project.link}
-  className="project-link mt-auto"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <svg
-    className="link-icon"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth="2"
-    stroke="currentColor"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M13.5 6H18m0 0v4.5M18 6l-7.5 7.5"
-    />
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M17 13.5V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h4.5"
-    />
-  </svg>
-  View Live Site
-</a>
+                  <a
+                    href={project.link}
+                    className="project-link mt-auto"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      className="link-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13.5 6H18m0 0v4.5M18 6l-7.5 7.5"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17 13.5V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h4.5"
+                      />
+                    </svg>
+                    View Live Site
+                  </a>
                 </div>
               </div>
             </div>
