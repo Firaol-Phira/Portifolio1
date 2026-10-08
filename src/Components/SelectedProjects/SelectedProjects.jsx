@@ -1,8 +1,8 @@
 import React from "react";
 import "./SelectedProjects.css";
-import Geda from "../../assets/Geda.jpg";
+import NexGeda from "../../assets/NexGeda.PNG";
 import Netflix from "../../assets/Netfliximg.PNG";
-import Apple from "../../assets/Apple.jpg";
+import Apple from "../../assets/Apple.PNG";
 
 const projectsData = [
   {
@@ -11,18 +11,17 @@ const projectsData = [
     image: Netflix,
     tags: ["React", "Async JS", "Bootstrap 5"],
     description:
-    
       "A frontend rebuild that captures the exact look and feel of the Netflix home interface. Uses asynchronous API calls to fetch and display trending showcase movies in real-time.",
-    link: "https://firaol-phira.github.io/NetflixProject2/",
+    link: "https://netflix-project2.vercel.app/",
   },
   {
     id: 2,
-    title: "GedaTech Platform",
-    image: Geda,
+    title: "  NexGeda Platform",
+    image: NexGeda,
     tags: ["React", "MySQL", "Node.js"],
     description:
       "A dynamic web platform for an educational technology company. Built with an administrative backend to manage course catalogs, track student registration records, and securely organize student data columns using a structured MySQL database layout.",
-    link: "#",
+    link: "https://nex-geda.vercel.app/",
   },
   {
     id: 3,
